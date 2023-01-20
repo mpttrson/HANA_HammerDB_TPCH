@@ -8,14 +8,14 @@ set VERBOSE "false" ;# Show query text and output
 set maxdop 2 ;# Maximum Degree of Parallelism
 set scale_factor 1000 ;#Scale factor of the tpc-h schema
 set authentication "sql";# Authentication Mode (WINDOWS or SQL)
-set server {172.30.3.123};# HANA
-set port "30015";# Microsoft SQL Server Port
+set server {<ip_address>};# HANA
+set port "<port>";# Microsoft SQL Server Port
 set odbc_driver {HDBODBC};# ODBC Driver
-set uid "mick";#User ID for SQL Server Authentication
-set pwd "Mick1234";#Password for SQL Server Authentication
+set uid "<user>";#User ID for SQL Server Authentication
+set pwd "<password>";#Password for SQL Server Authentication
 set tcp "true";#Specify TCP Protocol
 set azure "false";#Azure Type Connection
-set database "DE1";# Database containing the TPC Schema
+set database "<dbname>";# Database containing the TPC Schema
 set refresh_on "false" ;#First User does refresh function
 set update_sets 1 ;#Number of sets of refresh function to complete
 set trickle_refresh 1000 ;#time delay (ms) to trickle refresh function
